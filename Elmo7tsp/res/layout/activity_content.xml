@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <ImageButton
+        android:id="@+id/fb"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/pic11" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="9dp"
+        
+        />
+     <ImageButton
+        android:id="@+id/twitter"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/fb"
+        android:background="@drawable/pic10" 
+        android:layout_marginTop="17dp"
+        />
+<ImageButton
+        android:id="@+id/yt"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/pic8" 
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="17dp"
+        />
+     <ImageButton
+        android:id="@+id/menu"
+      android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toLeftOf="@+id/yt"
+        android:background="@drawable/pic9" 
+        android:layout_marginTop="17dp"
+         android:layout_marginRight="9dp"
+        />
+    <ImageView
+    android:id="@+id/topcircle"
+    android:layout_width="200dp"
+    android:layout_height="80dp"
+    android:src="@drawable/circle"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="15dp"
+    />
+<ListView
+    android:layout_below="@+id/topcircle"
+    android:id="@+id/lv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:cacheColorHint="#00000000"
+    />
+
+    
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    >
+ 
+    <ImageButton
+        android:id="@+id/fb"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/pic11" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="9dp"
+        
+        />
+     <ImageButton
+        android:id="@+id/twitter"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/fb"
+        android:background="@drawable/pic10" 
+        android:layout_marginTop="17dp"
+        />
+<ImageButton
+        android:id="@+id/yt"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/pic8" 
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="17dp"
+        />
+     <ImageButton
+        android:id="@+id/menu"
+      android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toLeftOf="@+id/yt"
+        android:background="@drawable/pic9" 
+        android:layout_marginTop="17dp"
+         android:layout_marginRight="9dp"
+        />
+
+    <ImageView
+    android:id="@+id/topcircle"
+    android:layout_width="200dp"
+    android:layout_height="80dp"
+    android:src="@drawable/circle"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="15dp"
+    />
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_below="@+id/topcircle"
+        android:background="@drawable/listbg2"
+        android:id="@+id/firstlayout"
+         >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="ركن المشرف"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/pic14"
+            android:src="@drawable/pic13"
+            android:layout_marginBottom="3dp"
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/secondlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listbg"
+        android:gravity="center"
+        android:layout_below="@+id/firstlayout"
+        >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="وسائل احتسابية"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#06F603"
+        />
+    </LinearLayout>
+     <LinearLayout
+         android:id="@+id/thirdlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listbg"
+        android:gravity="center"
+        android:layout_below="@+id/secondlayout"
+        >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="كتب احتسابية"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#06F603"
+        />
+    </LinearLayout>
+
+</RelativeLayout>
