@@ -186,7 +186,8 @@ public class ListOfTitles extends Activity {
 			@Override
 			public void run() {
 
-				if (available && updateable) {
+//				if (available && updateable) {
+				if (available) {
 
 					System.out.println("isNetworkAvailable() == true");
 					available = true;
