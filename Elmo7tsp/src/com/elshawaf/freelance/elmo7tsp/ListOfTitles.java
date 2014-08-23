@@ -1,5 +1,16 @@
 package com.elshawaf.freelance.elmo7tsp;
 
+import java.io.UnsupportedEncodingException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -35,17 +46,6 @@ import android.widget.Toast;
 
 import com.bugsense.trace.BugSenseHandler;
 import com.elshawaf.freelance.elmo7tsp.jason.JSONParser;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.UnsupportedEncodingException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class ListOfTitles extends Activity {
 	ImageView image;
