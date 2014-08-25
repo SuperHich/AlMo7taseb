@@ -94,18 +94,12 @@
     <!-- android:background="@drawable/socail" -->
     <!-- android:scaleType="fitCenter" /> -->
 
-    <WebView
-        android:id="@+id/webView1"
-        android:layout_width="match_parent"
-        android:layout_height="300sp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/firstlayout" />
 
     <LinearLayout
         android:id="@+id/share_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/webView1"
+        android:layout_alignParentBottom="true"
         android:background="@drawable/listbg2"
         android:gravity="center"
         android:orientation="horizontal"
@@ -133,4 +127,12 @@
             android:contentDescription="File Viewer" />
     </LinearLayout>
 
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/firstlayout" 
+        android:layout_above="@id/share_layout"/>
+    
 </RelativeLayout>
