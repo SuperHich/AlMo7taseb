@@ -10,12 +10,11 @@
 
     <application
 
-        android:debuggable="false"
 
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/SplashTheme" >
+        android:theme="@style/MyTheme" >
         <activity
             android:name="com.elshawaf.freelance.elmo7tsp.Elmo7tspMain"
             android:label="@string/app_name"

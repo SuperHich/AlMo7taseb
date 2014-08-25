@@ -176,7 +176,7 @@ public class ListOfTitles extends Activity {
 		title.setText(txtTitle);
 
 		dialog = new ProgressDialog(context);
-		dialog.setMessage("Loading ....");
+		dialog.setMessage("الرجاء الإنتظار ...");
 		dialog.show();
 
 		final Handler handler = new Handler();
