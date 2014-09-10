@@ -512,7 +512,7 @@ public class ListOfTitles extends Activity {
 									do {
 										// whole data of column is fetched by
 										// getColumnIndex()
-										String TITLE = cursor.getString(cursor
+										final String TITLE = cursor.getString(cursor
 												.getColumnIndex("TITLE"));
 										String DATE = cursor.getString(cursor
 												.getColumnIndex("DATE"));
@@ -521,18 +521,18 @@ public class ListOfTitles extends Activity {
 										// System.out.println("Title \n" +
 										// TITLE);
 
-										titles.add(TITLE);
-
 										runOnUiThread(new Runnable() {
 											@Override
 											public void run() {
+												titles.add(TITLE);
 												updateadapter();
 											}
 										});
 
 									} while (cursor.moveToNext());
 								}
-							}
+							}else
+								Elmo7tspManager.showNoConnectionDialog(ListOfTitles.this);
 						} catch (SQLiteException e) {
 							if (e.getMessage().toString()
 									.contains("no such table")) {
@@ -541,9 +541,10 @@ public class ListOfTitles extends Activity {
                                 runOnUiThread(new Runnable() {
                                     @Override
                                     public void run() {
-                                        Toast.makeText(ListOfTitles.this,
-                                                "لا توجد معلومات و قم بالاتصال بالانترنت",
-                                                Toast.LENGTH_LONG).show();
+//                                        Toast.makeText(ListOfTitles.this,
+//                                                "لا توجد معلومات و قم بالاتصال بالانترنت",
+//                                                Toast.LENGTH_LONG).show();
+                                    	Elmo7tspManager.showNoConnectionDialog(ListOfTitles.this);
                                     }
                                 });
 
@@ -566,7 +567,7 @@ public class ListOfTitles extends Activity {
 									do {
 										// whole data of column is fetched by
 										// getColumnIndex()
-										String TITLE = cursor.getString(cursor
+										final String TITLE = cursor.getString(cursor
 												.getColumnIndex("TITLE"));
 										String DATE = cursor.getString(cursor
 												.getColumnIndex("DATE"));
@@ -575,18 +576,18 @@ public class ListOfTitles extends Activity {
 										// System.out.println("Title \n" +
 										// TITLE);
 
-										titles.add(TITLE);
-
 										runOnUiThread(new Runnable() {
 											@Override
 											public void run() {
+												titles.add(TITLE);
 												updateadapter();
 											}
 										});
 
 									} while (cursor.moveToNext());
 								}
-							}
+							}else
+								Elmo7tspManager.showNoConnectionDialog(ListOfTitles.this);
 						} catch (SQLiteException e) {
 							if (e.getMessage().toString()
 									.contains("no such table")) {
@@ -595,9 +596,10 @@ public class ListOfTitles extends Activity {
                                 runOnUiThread(new Runnable() {
                                     @Override
                                     public void run() {
-                                        Toast.makeText(ListOfTitles.this,
-                                                "لا توجد معلومات و قم بالاتصال بالانترنت",
-                                                Toast.LENGTH_LONG).show();
+//                                        Toast.makeText(ListOfTitles.this,
+//                                                "لا توجد معلومات و قم بالاتصال بالانترنت",
+//                                                Toast.LENGTH_LONG).show();
+                                    	Elmo7tspManager.showNoConnectionDialog(ListOfTitles.this);
                                     }
                                 });
 
@@ -620,7 +622,7 @@ public class ListOfTitles extends Activity {
 									do {
 										// whole data of column is fetched by
 										// getColumnIndex()
-										String TITLE = cursor.getString(cursor
+										final String TITLE = cursor.getString(cursor
 												.getColumnIndex("TITLE"));
 										String DATE = cursor.getString(cursor
 												.getColumnIndex("DATE"));
@@ -629,18 +631,18 @@ public class ListOfTitles extends Activity {
 										// System.out.println("Title \n" +
 										// TITLE);
 
-										titles.add(TITLE);
-
 										runOnUiThread(new Runnable() {
 											@Override
 											public void run() {
+												titles.add(TITLE);
 												updateadapter();
 											}
 										});
 
 									} while (cursor.moveToNext());
 								}
-							}
+							}else
+								Elmo7tspManager.showNoConnectionDialog(ListOfTitles.this);
 						} catch (SQLiteException e) {
 							if (e.getMessage().toString()
 									.contains("no such table")) {
@@ -650,9 +652,10 @@ public class ListOfTitles extends Activity {
                                 runOnUiThread(new Runnable() {
                                     @Override
                                     public void run() {
-                                        Toast.makeText(ListOfTitles.this,
-                                                "لا توجد معلومات و قم بالاتصال بالانترنت",
-                                                Toast.LENGTH_LONG).show();
+//                                        Toast.makeText(ListOfTitles.this,
+//                                                "لا توجد معلومات و قم بالاتصال بالانترنت",
+//                                                Toast.LENGTH_LONG).show();
+                                    	Elmo7tspManager.showNoConnectionDialog(ListOfTitles.this);
                                     }
                                 });
 
@@ -674,7 +677,7 @@ public class ListOfTitles extends Activity {
 									do {
 										// whole data of column is fetched by
 										// getColumnIndex()
-										String TITLE = cursor.getString(cursor
+										final String TITLE = cursor.getString(cursor
 												.getColumnIndex("TITLE"));
 										String DATE = cursor.getString(cursor
 												.getColumnIndex("DATE"));
@@ -683,18 +686,18 @@ public class ListOfTitles extends Activity {
 										// System.out.println("Title \n" +
 										// TITLE);
 
-										titles.add(TITLE);
-
 										runOnUiThread(new Runnable() {
 											@Override
 											public void run() {
+												titles.add(TITLE);
 												updateadapter();
 											}
 										});
 
 									} while (cursor.moveToNext());
 								}
-							}
+							}else
+								Elmo7tspManager.showNoConnectionDialog(ListOfTitles.this);
 						} catch (SQLiteException e) {
 							if (e.getMessage().toString()
 									.contains("no such table")) {
@@ -703,9 +706,10 @@ public class ListOfTitles extends Activity {
                                 runOnUiThread(new Runnable() {
                                     @Override
                                     public void run() {
-                                        Toast.makeText(ListOfTitles.this,
-                                                "لا توجد معلومات و قم بالاتصال بالانترنت",
-                                                Toast.LENGTH_LONG).show();
+//                                        Toast.makeText(ListOfTitles.this,
+//                                                "لا توجد معلومات و قم بالاتصال بالانترنت",
+//                                                Toast.LENGTH_LONG).show();
+                                    	Elmo7tspManager.showNoConnectionDialog(ListOfTitles.this);
                                     }
                                 });
 
@@ -727,7 +731,7 @@ public class ListOfTitles extends Activity {
 									do {
 										// whole data of column is fetched by
 										// getColumnIndex()
-										String TITLE = cursor.getString(cursor
+										final String TITLE = cursor.getString(cursor
 												.getColumnIndex("TITLE"));
 										String DATE = cursor.getString(cursor
 												.getColumnIndex("DATE"));
@@ -736,18 +740,18 @@ public class ListOfTitles extends Activity {
 										// System.out.println("Title \n" +
 										// TITLE);
 
-										titles.add(TITLE);
-
 										runOnUiThread(new Runnable() {
 											@Override
 											public void run() {
+												titles.add(TITLE);
 												updateadapter();
 											}
 										});
 
 									} while (cursor.moveToNext());
 								}
-							}
+							}else 
+								Elmo7tspManager.showNoConnectionDialog(ListOfTitles.this);
 						} catch (SQLiteException e) {
 							if (e.getMessage().toString()
 									.contains("no such table")) {
@@ -757,9 +761,10 @@ public class ListOfTitles extends Activity {
                                 runOnUiThread(new Runnable() {
                                     @Override
                                     public void run() {
-                                        Toast.makeText(ListOfTitles.this,
-                                                "لا توجد معلومات و قم بالاتصال بالانترنت",
-                                                Toast.LENGTH_LONG).show();
+//                                        Toast.makeText(ListOfTitles.this,
+//                                                "لا توجد معلومات و قم بالاتصال بالانترنت",
+//                                                Toast.LENGTH_LONG).show();
+                                    	Elmo7tspManager.showNoConnectionDialog(ListOfTitles.this);
                                     }
                                 });
 
@@ -866,7 +871,7 @@ public class ListOfTitles extends Activity {
 									do {
 										// whole data of column is fetched by
 										// getColumnIndex()
-										String TITLE = cursor.getString(cursor
+										final String TITLE = cursor.getString(cursor
 												.getColumnIndex("TITLE"));
 										String DATE = cursor.getString(cursor
 												.getColumnIndex("DATE"));
@@ -875,18 +880,18 @@ public class ListOfTitles extends Activity {
 										// System.out.println("Title \n" +
 										// TITLE);
 
-										titles.add(TITLE);
-
 										runOnUiThread(new Runnable() {
 											@Override
 											public void run() {
+												titles.add(TITLE);
 												updateadapter();
 											}
 										});
 
 									} while (cursor.moveToNext());
 								}
-							}
+							}else
+								Elmo7tspManager.showNoConnectionDialog(ListOfTitles.this);
 						} catch (SQLiteException e) {
 							if (e.getMessage().toString()
 									.contains("no such table")) {
@@ -896,9 +901,10 @@ public class ListOfTitles extends Activity {
                                 runOnUiThread(new Runnable() {
                                     @Override
                                     public void run() {
-                                        Toast.makeText(ListOfTitles.this,
-                                                "لا توجد معلومات و قم بالاتصال بالانترنت",
-                                                Toast.LENGTH_LONG).show();
+//                                        Toast.makeText(ListOfTitles.this,
+//                                                "لا توجد معلومات و قم بالاتصال بالانترنت",
+//                                                Toast.LENGTH_LONG).show();
+                                    	Elmo7tspManager.showNoConnectionDialog(ListOfTitles.this);
                                     }
                                 });
 
@@ -927,7 +933,7 @@ public class ListOfTitles extends Activity {
 											// whole data of column is fetched
 											// by
 											// getColumnIndex()
-											String TITLE = cursor.getString(cursor
+											final String TITLE = cursor.getString(cursor
 													.getColumnIndex("TITLE"));
 											String DATE = cursor.getString(cursor
 													.getColumnIndex("DATE"));
@@ -936,18 +942,18 @@ public class ListOfTitles extends Activity {
 											// System.out.println("Title \n" +
 											// TITLE);
 
-											titles.add(TITLE);
-
 											runOnUiThread(new Runnable() {
 												@Override
 												public void run() {
+													titles.add(TITLE);
 													updateadapter();
 												}
 											});
 
 										} while (cursor.moveToNext());
 									}
-								}
+								}else
+									Elmo7tspManager.showNoConnectionDialog(ListOfTitles.this);
 							} catch (SQLiteException e) {
 								if (e.getMessage().toString()
 										.contains("no such table")) {
@@ -957,9 +963,10 @@ public class ListOfTitles extends Activity {
                                     runOnUiThread(new Runnable() {
                                         @Override
                                         public void run() {
-                                            Toast.makeText(ListOfTitles.this,
-                                                    "لا توجد معلومات و قم بالاتصال بالانترنت",
-                                                    Toast.LENGTH_LONG).show();
+//                                            Toast.makeText(ListOfTitles.this,
+//                                                    "لا توجد معلومات و قم بالاتصال بالانترنت",
+//                                                    Toast.LENGTH_LONG).show();
+                                        	Elmo7tspManager.showNoConnectionDialog(ListOfTitles.this);
                                         }
                                     });
 
@@ -987,7 +994,7 @@ public class ListOfTitles extends Activity {
 											// whole data of column is fetched
 											// by
 											// getColumnIndex()
-											String TITLE = cursor.getString(cursor
+											final String TITLE = cursor.getString(cursor
 													.getColumnIndex("TITLE"));
 											String DATE = cursor.getString(cursor
 													.getColumnIndex("DATE"));
@@ -996,18 +1003,18 @@ public class ListOfTitles extends Activity {
 											// System.out.println("Title \n" +
 											// TITLE);
 
-											titles.add(TITLE);
-
 											runOnUiThread(new Runnable() {
 												@Override
 												public void run() {
+													titles.add(TITLE);
 													updateadapter();
 												}
 											});
 
 										} while (cursor.moveToNext());
 									}
-								}
+								}else
+									Elmo7tspManager.showNoConnectionDialog(ListOfTitles.this);
 							} catch (SQLiteException e) {
 								if (e.getMessage().toString()
 										.contains("no such table")) {
@@ -1018,9 +1025,10 @@ public class ListOfTitles extends Activity {
                                     runOnUiThread(new Runnable() {
                                         @Override
                                         public void run() {
-                                            Toast.makeText(ListOfTitles.this,
-                                                    "لا توجد معلومات و قم بالاتصال بالانترنت",
-                                                    Toast.LENGTH_LONG).show();
+//                                            Toast.makeText(ListOfTitles.this,
+//                                                    "لا توجد معلومات و قم بالاتصال بالانترنت",
+//                                                    Toast.LENGTH_LONG).show();
+                                        	Elmo7tspManager.showNoConnectionDialog(ListOfTitles.this);
                                         }
                                     });
 

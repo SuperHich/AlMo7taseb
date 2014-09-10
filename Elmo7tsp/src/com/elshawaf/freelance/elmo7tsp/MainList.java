@@ -841,5 +841,4 @@ public class MainList extends Activity {
 		}
 
 	}
-
 }

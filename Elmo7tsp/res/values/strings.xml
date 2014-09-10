@@ -10,5 +10,9 @@
     <string name="title_activity_other_items_choice">OtherItemsChoice</string>
     <string name="title_activity_title_details">TitleDetails</string>
     <string name="website_files_activity_txt">Website Files</string>
+    <string name="network_msg">لا توجد معلومات و قم بالاتصال بالانترنت</string>
+    <string name="wifi">واي فاي</string>
+    <string name="roaming">جوال</string>
+    <string name="exit">خروج</string>
 
 </resources>
